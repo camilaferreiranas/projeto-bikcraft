@@ -1,3 +1,4 @@
+/*Estilização geral*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,6 +13,9 @@ img {
     display: block;
 }
 
+
+
+/*Parte superior: header, introdução*/
 .subtitulo {
     font-weight: bold;
     font-size: 24px;
@@ -32,27 +36,16 @@ img {
     margin: 8px auto;
 }
 
-.btn {
-    border: 3px solid #fec63e;
-    padding: 10px 30px;
-    color: #fec63e;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: bold;
-}
 
 
-.btn:hover {
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px ;
+    text-align: center;
     color: #fff;
-    border-color: #fff;
+    padding-top: 30px;
 }
-.btn-preto:hover {
-    color: #000;
-    border-color: #000;
-}
-
 
 .header {
   width: 100%;
@@ -87,6 +80,10 @@ img {
   color: #fff;
 }
 
+.header_menu ul li a.menu_ativo{
+    color: #fff;
+}
+
 .introducao {
   margin-top: 92px;
   height: 380px;
@@ -104,6 +101,23 @@ img {
   text-transform: uppercase;
 }
 
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .introducao-interna h1::after {
+    content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
+}
+
 .quote-externo {
   max-width: 320px;
   margin: 0 auto;
@@ -114,6 +128,8 @@ img {
 .quote-externo p {
   font-style: italic;
 }
+
+
 
 .quote-externo p::before,
 .quote-externo p::after {
@@ -131,6 +147,30 @@ img {
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+
+/*Conteúdo **/
+
+.btn {
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
 }
 
 .produtos {
@@ -234,6 +274,7 @@ img {
 
 .qualidade_lista {
     padding-top: 20px;
+    overflow: hidden;
 }
 
 .qualidade_lista li h3 {
@@ -251,6 +292,12 @@ img {
   background: #000;
   margin: 6px auto;
 }
+
+
+
+
+/*Footer*/
+
 
 .quebra {
     width: 100%;
