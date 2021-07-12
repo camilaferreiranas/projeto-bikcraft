@@ -15,3 +15,6 @@ if(window.SimpleAnime) {
     new SimpleAnime();
 }
 
+function mostrarAlerta() {
+    alert("Mensagem Enviada");
+}
