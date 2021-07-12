@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="shortcut icon" href="img/bikcraft-icon.ico" />
   </head>
   <body>
@@ -19,7 +22,7 @@
         </a>
         <nav class="grid-12 header_menu">
           <ul>
-            <li><a href="sobre.html" >Sobre</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="portfolio.html" class="menu_ativo">Portfólio</a></li>
             <li><a href="contato.html">Contato</a></li>
@@ -28,45 +31,63 @@
       </div>
     </header>
 
-    <section class="introducao-interna interna_portfolio">
-      <div class="container">
-        <h1>Portfólio</h1>
+    <section  class="introducao-interna interna_portfolio">
+      <div class="container" >
+        <h1 data-anime="400">Portfólio</h1>
         <p>conheça os projetos que amamos mostrar</p>
       </div>
     </section>
 
-
-    <section class="container">
-        
-            <blockquote class="quote-clientes" >
-                <p>
-                    "No mundo atual, a continua expansão de nossa
-                    atividade cumpre um papel essencial na formulação da
-                    gestão inovadora da qual fazemos parte."
-                </p>
-                <cite>Barbara Moss</cite>
-              </blockquote>
-       
+    <section class="container fadeInDown" data-anime="800" data-slide="quote">
+      <blockquote class="quote-clientes">
+        <p>
+          "No mundo atual, a continua expansão de nossa atividade cumpre um
+          papel essencial na formulação da gestão inovadora da qual fazemos
+          parte."
+        </p>
+        <cite>Barbara Moss</cite>
+      </blockquote>
+      <blockquote class="quote-clientes">
+        <p>
+          "Sair para pedalar é a resposta para a pergunta que você esquecerá em
+          breve."
+        </p>
+        <cite>Desconhecido</cite>
+      </blockquote>
+      <blockquote class="quote-clientes">
+        <p>"Nada se compara ao simples prazer de pedalar."</p>
+        <cite>John F. Kennedy</cite>
+      </blockquote>
     </section>
 
+    <section data-anime="1200" class="portfolio fadeInDown">
+      <div class="container" data-slide="portfolio">
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="img/portfolio/retro.jpg" alt="Bicicleta retro" />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio" />
+          </li>
+          <li class="grid-16">
+            <img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte" />
+          </li>
+        </ul>
 
-    <section class="portfolio">
-        <div class="container">
-          <ul class="portfolio_lista">
-            <li class="grid-8">
-              <img src="img/portfolio/retro.jpg" alt="Bicicleta retro" />
-            </li>
-            <li class="grid-8">
-              <img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio" />
-            </li>
-            <li class="grid-16">
-              <img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte" />
-            </li>
-          </ul>
-        </div>
-      </section>
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio" />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/retro.jpg" alt="Bicicleta retro" />
+          </li>
 
-    
+          <li class="grid-16">
+            <img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte" />
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section class="quebra">
       <blockquote class="quote-externo container">
@@ -127,5 +148,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
